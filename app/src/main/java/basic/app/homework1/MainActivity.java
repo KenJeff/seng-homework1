@@ -17,15 +17,13 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        Button numOne = (Button) findViewById(R.id.Part1);
+        Button numOne = findViewById(R.id.Part1);
         numOne.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, Part1Activity.class));
         });
-        Button numTwo = (Button) findViewById(R.id.Part2);
-        numTwo.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View w) {
-                startActivity(new Intent(MainActivity.this, Part2Activity.class));
-            }
+        Button numTwo = findViewById(R.id.Part2);
+        numTwo.setOnClickListener(w -> {
+            startActivity(new Intent(MainActivity.this, Part2Activity.class));
         });
     }
 
