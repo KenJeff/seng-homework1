@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Part1Activity">
+
+    <Button
+        android:id="@+id/btn_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:onClick="change"
+        android:text="@string/button" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/tap_button_to_change_color"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tap_to_change_color"
+            android:inputType="textLongMessage" />
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>
